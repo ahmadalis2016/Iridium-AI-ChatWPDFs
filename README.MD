@@ -7,7 +7,7 @@ This Streamlit application allows users to interactively chat with the content o
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://iridium-ai-llama2chatbot.streamlitapp.com/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://iridium-ai-chatpdf.streamlitapp.com/)
 
 ## Prerequisite libraries
 
