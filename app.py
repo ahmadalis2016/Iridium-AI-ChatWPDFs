@@ -53,7 +53,7 @@ def get_user_input(user_question):
         st.error("FAISS index file not found. Make sure to upload PDF files and process them first.")
         return ""
 
-    new_db = FAISS.load_local("faiss_index", embeddings=GoogleGenerativeAIEmbeddings(api_key=os.getenv("GOOGLE_API_KEY"), model="models/embedding-001"))
+    new_db = FAISS.load_local("faiss_index", embeddings=GoogleGenerativeAIEmbeddings(api_key=os.getenv("GOOGLE_API_KEY"), model="models/embedding-001"), allow_dangerous_deserialization=True)
     docs = new_db.similarity_search(user_question)
     chain = get_conversational_chain()
     response = chain({"input_documents": docs, "question": user_question}, return_only_outputs=True)
