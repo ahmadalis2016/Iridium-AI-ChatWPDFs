@@ -74,7 +74,7 @@ def main():
         # Load and display Iridium logo.
         logo_path = "Images/IridiumAILogo.png" 
         iridium_logo = Image.open(logo_path)
-        st.image(iridium_logo, use_column_width=False)
+        st.image(iridium_logo, use_container_width=False)
         st.title("Menu:")
         pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
         if st.button("Submit & Process"):
